@@ -1,8 +1,8 @@
-import { useContext, useState } from 'react'
-import UserContext from '../../Context/userContext/UserContext'
+import React from 'react'
+import {useUser} from '../../Context/userContext/UserContext'
 
 export default function Profile() {
-    const { user, setUser } = useContext(UserContext)
+    const { user, setUser } = useUser()
     console.log(user);
     const handleLogin = () => {
         setTimeout(() => {

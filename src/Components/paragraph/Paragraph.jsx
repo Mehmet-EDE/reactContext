@@ -1,9 +1,9 @@
-import {useContext,useState} from 'react'
-import ThemeContext from '../../Context/themeContext/themeContext'
+import * as react from 'react'
+import {useTheme} from '../../Context/themeContext/themeContext'
 
 
 export default function Paragraph() {
-    const data =useContext(ThemeContext)
+    const data =useTheme()
     return (
         <div>
             <br />
